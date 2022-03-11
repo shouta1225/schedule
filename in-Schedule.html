@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href ='in-Schedule.css'>
+    <title>Schedule</title>
+    <!--↓はfont-awesome cdnjsからとってきたもの-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <!--↓はGoogle FontsのQuicksandからとってきたもの-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <input type="submit" class="close" id="close" value="✖️">
+            <h2>新規作成</h2>
+            <div id='border-bottom'></div>
+        </div>
+
+        <div class="weekday">
+            <h2></h2>
+        </div><!--選択した日の曜日を表す-->
+
+        <div class="months-and-days" id="months-and-days">
+            <div id="schedule-now">現在入っている予定</div>
+            <div id='border-bottom'></div>
+            <h2>日付：</h2>
+            <div id="clickedDate"></div>
+            <div id='border-bottom'></div>
+        </div><!--選択した日にちを表す-->
+
+        <div class="schedule-time">
+        </div><!--予定時間の設定-->
+
+        <div class="schedule">
+            <input type="text" id="schedule-message" placeholder="予定を入力してください"></input>
+        </div>
+
+        <div class="importance"><!--重要度-->
+            <!--優先度を選択-->
+            重要度
+            <select name="priority">
+                <option value="高い" id='high'>高
+                <option value="普通" id='middle'>中
+                <option value="低い" id='low'>低
+            </select>
+            <div id='border-bottom'></div>
+        </div>
+
+        <div class="notification"><!--通知-->
+        </div>
+        
+
+        
+
+        <div class="footer">
+            <input type="submit" value="保存">
+        </div>
+    </div>
+
+    <script src ="script.js"></script>
+    <script src ="in-Schedule.js"></script>
+</body>
+</html>
